@@ -17,6 +17,7 @@ $ cd demo1-entry
 ```bash
 $ npm run dev
 ```
+**注意，这里npm run dev 我们使用的是 `webpack-dev-server --open`而不是打包，如果想看一下打包的结果，可以直接在命令行使用`webpack`来打包。如果没有指定输出的路径，默认是当前文件夹下的dist目录**
 
 ### Index
 1. [webpack概念](#webpack概念)
@@ -71,6 +72,11 @@ module.exports = config;
 ```
 ```bash
 $ npm run dev
+```
+注意：这里我们没有指定打包后的路径，我们的`package.json`的`script`中的`dev`是`open`，而非打包。
+我们可以使用webpack来打包，如果我们没有指定打包输出的路径，默认为当前文件的`dist`文件夹下。
+```bash
+$ webpack
 ```
 ## demo2-多个入口文件
 在`main1.js`和`main2.js`中
