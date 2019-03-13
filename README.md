@@ -12,5 +12,5 @@ webpack学习笔记
 
 
 
-## Demo01
+## Demo01: Entry file
 fffff
